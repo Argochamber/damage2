@@ -101,6 +101,7 @@ public class DamageAdapter extends BaseAdapter {
                             .concat(" (")
                             .concat(value.toString())
                             .concat("%)"));
+            holder.text.setTag(damages.get(position).getKey().getName());
             if (value > 5){
                 holder.text.setTextColor(Color.BLUE);
             } else if (value < 5){

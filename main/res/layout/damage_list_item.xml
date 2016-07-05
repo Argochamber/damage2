@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:onClick="damageSelectDetail">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,7 +16,7 @@
         android:layout_alignParentBottom="true"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_toLeftOf="@+id/icon"
-        android:layout_toStartOf="@+id/icon" />
+        android:layout_toStartOf="@+id/icon"/>
 
     <ImageView
         android:layout_width="wrap_content"

@@ -1,6 +1,7 @@
 package com.argochamber.games.damage20;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -87,6 +88,16 @@ public class MainActivity extends AppCompatActivity {
         ListView list = (ListView) findViewById(R.id.damage_suggestion_list);
         ListAdapter adapter = new DamageAdapter(this, selectedFaction.getCalcAmount(), selectedFaction);
         list.setAdapter(adapter);
+    }
+
+    /**
+     * Called whenever a damage is touched.
+     */
+    public void damageSelectDetail(View view){
+        Intent intent = new Intent(this, DamageDetail.class);
+        TextView t = (TextView) view.findViewById(R.id.name);
+        intent.putExtra(DamageDetail.DMG_DAMAGE_NAME, (String)t.getTag());
+        startActivity(intent);
     }
 
     @Override

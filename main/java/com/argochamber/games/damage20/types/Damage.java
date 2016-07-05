@@ -3,13 +3,14 @@ package com.argochamber.games.damage20.types;
 import com.argochamber.games.damage20.sources.Source;
 import com.argochamber.games.damage20.sources.Sources;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
 /**
  * Created by Pablo on 03/07/2016.
  */
-public class Damage {
+public class Damage implements Serializable {
 
     public static final class DamageSet extends java.util.ArrayList<Map.Entry<Damage, Integer>> {
 
