@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Damage 2.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_true_damage">True Damage Calc</string>
+    <string name="info_subtitle_mod_rec">These are recommended damage types,\nordered from most effective to less.</string>
+    <!-- This is the list of enemies available -->
+    <string-array name="enemies_list">
+        <item>Grineer</item>
+        <item>Corpus</item>
+        <item>Infested</item>
+        <item>Corrupted</item>
+        <item>Tenno</item>
+    </string-array>
+
+    <!-- Non-GUI elements -->
+    <string name="faction_grineer_name">Grineer</string>
+</resources>
